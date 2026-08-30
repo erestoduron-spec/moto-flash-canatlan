@@ -5,20 +5,21 @@ import { CONFIG } from "@/lib/config";
 export function MarcaHeader() {
   const { marca } = CONFIG;
   return (
-    <header className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-5 pt-12 pb-8 text-center sm:pt-16">
+    <header className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-5 pt-8 pb-8 text-center sm:pt-10">
+      {/* Portada del negocio (su flyer). El nombre ya se ve aquí, por eso el
+          <h1> de texto va oculto: sigue ahí para buscadores y lectores. */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/portada-hero.jpg"
+        alt={`${marca.negocio} — ${marca.descripcion}`}
+        className="w-full max-w-sm rounded-3xl border border-line object-contain"
+      />
+      <h1 className="sr-only">{marca.negocio}</h1>
+
       <span className="chip no-print">
         <span className="anim-pulse-glow inline-block h-2 w-2 rounded-full" style={{ background: "var(--marca)" }} />
         Catálogo disponible 24/7
       </span>
-
-      {marca.logo ? (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img src={marca.logo} alt={marca.negocio} className="h-16 w-auto object-contain" />
-      ) : (
-        <h1 className="font-display text-5xl font-semibold text-gradient-marca sm:text-6xl">
-          {marca.negocio}
-        </h1>
-      )}
 
       <p className="max-w-xl text-lg text-ink-soft">{marca.descripcion}</p>
 
