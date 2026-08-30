@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   // ⚠️ Tu dirección de Vercel. Si algún día cambias el nombre del proyecto
   // o le pones dominio propio, actualiza esta línea o la vista previa
   // al compartir seguirá apuntando al lugar viejo.
-  metadataBase: new URL("https://catalogo-vivo-liard.vercel.app"),
+  metadataBase: new URL("https://moto-flash-canatlan.vercel.app"),
   title: `${CONFIG.marca.negocio} · Catálogo`,
   description: CONFIG.marca.descripcion,
   openGraph: {

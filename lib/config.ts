@@ -7,9 +7,9 @@ export const CONFIG: Config = {
     descripcion:
       "Hacemos cualquier mandado en Canatlán y te lo llevamos hasta tu casa por $35.",
     logo: undefined,
-    primario: "#dc2626",
-    secundario: "#f59e0b",
-    fondo: "claro",
+    primario: "#FACC15",
+    secundario: "#F59E0B",
+    fondo: "oscuro",
     whatsappPrincipal: "5216182825100",
     ciudad: "Canatlán, Durango",
     enlace: undefined,
